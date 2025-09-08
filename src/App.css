@@ -1,0 +1,56 @@
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  padding: 20px 30px; 
+  color: white;
+  background-color: gray;
+  transition: all 0.3s ease;
+  z-index: 1000;
+  box-sizing: border-box; 
+}
+
+nav.shrink {
+  background-color: rgb(104, 104, 104);
+  padding: 15px;
+}
+
+nav h1 {
+  font-size: 32px;
+  font-weight: 700;
+  margin: 0; 
+  transition: font-size 0.3s ease;
+}
+
+nav.shrink h1 {
+  font-size: 27px;
+}
+
+.cart-icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-right: 10px; 
+}
+
+.Fa-cart {
+  color: white;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.cart-icon span {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 3px 7px;
+  font-size: 12px;
+  font-weight: bold;
+}
